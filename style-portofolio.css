@@ -1,0 +1,118 @@
+body{
+	margin: 0;
+	padding: 5%;
+    font-family: 'PT Sans', sans-serif;
+    overflow-x: hidden;
+}
+.bg{
+	background-image: linear-gradient(to bottom left ,cyan,#42f593);
+	height: 70vh;
+	position: absolute;
+	width: 100vw;
+	top: 0%;
+	left: 0%;
+	animation: bganimation 10s infinite;
+}
+
+ @keyframes bganimation{
+	0%{ filter: hue-rotate(0deg);}
+	50%{ filter: hue-rotate(90deg);}
+	100%{ filter: hue-rotate(360deg);}
+}
+
+.pp{
+	margin-top: 15px;
+	width: 200px;
+}
+.card-content{
+    text-align: center;
+}
+.edu, .sosmed{
+	text-align: left;
+	padding: 50px;
+}
+.icon{
+	width: 30px;
+}
+.sosmed li a{
+	color: grey;
+	text-decoration: none;
+}
+.dflex{
+	display: flex;
+	align-items: center;
+}
+.sosmed a{
+	margin-left: 10px;
+}
+.about li{
+	margin :10px;
+}
+.about{
+	margin-top: 20px;}
+.about b{
+	margin-left: 10px;
+}
+.skills .card{
+	padding: 10px;
+	margin: 15px;
+}
+.skills .card .card-content{
+	padding: 0;	
+}
+.skills .card img{
+	height: 50px;
+
+}
+.skills .card .card-title{
+	margin: 0px;
+	padding-bottom: 8px;
+	font-size: 15px;
+	font-family: 'Poppins', sans-serif;
+}
+.project{
+	width: 100%;
+}
+.project .card{
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+}
+.sendmsg {
+	padding: 0 80px;
+}
+.project .card .card-title{
+	color: black;
+	opacity: 0.8;
+}
+
+@media screen and (min-width: 900px){
+    body{
+        padding: 10%;
+    }
+    .about{
+	display: flex;
+	justify-content: center;
+}
+	
+}
+@media screen and (max-width: 900px){
+	.project .card{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	}
+
+	.skills .card{
+		margin: 5px 0px;
+	}
+}
+
+.bcard{
+	background: rgba( 255, 255, 255, 0.25 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 30px );
+	-webkit-backdrop-filter: blur( 30px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
